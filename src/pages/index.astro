@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import ThingsForm from '../components/ItemForm';
+import Items from '../components/Items';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -31,7 +33,11 @@ import Card from '../components/Card.astro';
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+
+
 		</ul>
+    <ThingsForm client:visible />
+    <Items client:visible />
 	</main>
 </Layout>
 
